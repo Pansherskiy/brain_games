@@ -9,3 +9,9 @@ https://asciinema.org/a/558769
 
 brain-gcd
 https://asciinema.org/a/558817
+
+brain-progression
+https://asciinema.org/a/558864
+
+brain-prime
+https://asciinema.org/a/558924

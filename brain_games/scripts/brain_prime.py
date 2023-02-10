@@ -8,16 +8,17 @@ def main():
     name = prompt.string('May I have your name? ')
     print("Hello, " + name)
     num_of_iter = 3
-    print("What number is missing in the progression?")
+    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
     while num_of_iter:
-        progression = random.randint(1, 15)
-        fst_num_in_lst = random.randint(1, 100)
-        last_num_in_lst = fst_num_in_lst + progression * 10
-        lst = list(range(fst_num_in_lst, last_num_in_lst, progression))
-        index = random.randint(0, 9)
-        correct_answer = str(lst[index])
-        lst[index] = '..'
-        print(' '.join(str(i) for i in lst))
+        num = random.randint(2, 100)
+        fst_psbl_dvsr = num // 2
+        while num % fst_psbl_dvsr != 0:
+            fst_psbl_dvsr -= 1
+        if fst_psbl_dvsr == 1:
+            correct_answer = 'yes'
+        else:
+            correct_answer = 'no'
+        print(f'Question: {num}')
         user_answer = input('Your answer: ')
         if user_answer == correct_answer:
             print('Correct!')
