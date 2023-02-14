@@ -1,35 +1,9 @@
 #!/usr/bin/env python3
-import prompt
-import random
+from .games.prime import run_game
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print("Hello, " + name)
-    num_of_iter = 3
-    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
-    while num_of_iter:
-        num = random.randint(2, 100)
-        fst_psbl_dvsr = num // 2
-        while num % fst_psbl_dvsr != 0:
-            fst_psbl_dvsr -= 1
-        if fst_psbl_dvsr == 1:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
-        print(f'Question: {num}')
-        user_answer = input('Your answer: ')
-        if user_answer == correct_answer:
-            print('Correct!')
-        else:
-            print(f"""'{user_answer}' is wrong answer ;(. \
-Correct answer was '{correct_answer}'""")
-            print(f'Let\'s try again, {name}')
-            break
-        num_of_iter -= 1
-    if num_of_iter == 0:
-        print(f'Congratulations, {name}!')
+    run_game()
 
 
 if __name__ == "__main__":
