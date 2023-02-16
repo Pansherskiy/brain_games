@@ -17,7 +17,7 @@ def game_core(quiz, start_question):
         else:
             print(f"""'{user_answer}' is wrong answer ;(. \
 Correct answer was '{correct_answer}'""")
-            print(f'Let\'s try again, {name}')
+            print(f'Let\'s try again, {name}!')
             break
     if num_of_iter == 0:
         print(f'Congratulations, {name}!')
