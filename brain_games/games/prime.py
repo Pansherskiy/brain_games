@@ -1,5 +1,5 @@
 from random import randint
-from .core import game_core
+from ..core import game_core
 
 
 start_question = """Answer 'yes' if given number is prime.\

@@ -1,5 +1,5 @@
 from random import randint, choice
-from .core import game_core
+from ..core import game_core
 
 
 start_question = "What is the result of the expression?"

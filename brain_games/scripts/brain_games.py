@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from . import cli
+from .. import cli
 
 
 def main():

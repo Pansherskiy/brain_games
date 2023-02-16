@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from .games.prime import run_game
+from ..games.prime import run_game
 
 
 def main():
