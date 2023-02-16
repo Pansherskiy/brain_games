@@ -2,7 +2,8 @@ from random import randint
 from ..core import game_core
 
 
-start_question = """Answer "yes" if the number is even, otherwise answer "no"."""
+start_question = """Answer "yes" if the number is even,\
+ otherwise answer "no"."""
 
 
 def quiz():
